@@ -6,7 +6,7 @@
 //смотрим на сумму его делителей, если она равна изначальному числу, которое мы запоминали,
 //то выписываем два этих числа.
 public class Main{
-    public static void main(String[] args) {
+    public static void main(String args[]){
         int n = 1;
         int c = 0;
         int a, b, d;
@@ -19,11 +19,11 @@ public class Main{
         }
     }	
         for (int d = 1; d < 1000; d ++){
-            b = sdel(d);
+            b = sdel(d);            
             c = sdel(b);
             if (b == c && c == d){
                 System.out.println("это числа", c, d);
+                }
             }
         }
-    }
 }
